@@ -103,7 +103,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
    *
    * ```js
    * isEngineer: function(item) {
-   *     return item.type == 'engineer' || item.manager.type == 'engineer';
+   *   return item.type == 'engineer' || item.manager.type == 'engineer';
    * }
    * ```
    *
@@ -558,7 +558,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         let itemIdx = isntIdxToItemsIdx[instIdx];
         let item = items[itemIdx];
         itemsIdxToInstIdx[itemIdx] = instIdx;
-        if (inst && instIdx < this.__limit) {
+        if (inst) {
           inst._setPendingProperty(this.as, item);
           inst._setPendingProperty(this.indexAs, instIdx);
           inst._setPendingProperty(this.itemsIndexAs, itemIdx);
